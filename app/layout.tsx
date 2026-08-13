@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const serif = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
+const serif = localFont({
+  src: "./fonts/cormorant-garamond-latin.woff2",
+  weight: "400 600",
+  style: "normal",
   variable: "--font-serif",
   display: "swap",
 });
 
-const sans = Manrope({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+const sans = localFont({
+  src: "./fonts/manrope-latin.woff2",
+  weight: "400 800",
+  style: "normal",
   variable: "--font-sans",
   display: "swap",
 });
