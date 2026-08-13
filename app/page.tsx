@@ -6,7 +6,14 @@ const email =
   "https://mail.google.com/mail/?view=cm&fs=1&to=desateliers%40gmail.com&su=Consulta%20sobre%20una%20pieza%20de%20Tado&body=Hola%20Tado%2C%0A%0AHe%20visto%20una%20pieza%20que%20me%20interesa%20y%20me%20gustar%C3%ADa%20preguntar%20por%20su%20disponibilidad.%0A%0APieza%20o%20referencia%3A%0A%0AGracias.";
 
 function Arrow() {
-  return <span className="arrowIcon" aria-hidden="true">↗</span>;
+  return (
+    <span className="arrowIcon" aria-hidden="true">
+      ↗
+      <svg className="arrowSvg" viewBox="0 0 16 16" fill="none">
+        <path d="M4 12L12 4M6.25 4H12V9.75" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </span>
+  );
 }
 
 export default function Home() {
